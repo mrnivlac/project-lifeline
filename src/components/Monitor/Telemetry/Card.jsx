@@ -213,7 +213,7 @@ const TelemetryCard = (props) => {
       return o.tpo_code === code.mean_arterial_pressure;
     });
     if (index >= 0) {
-      setTime(moment(rxbox[index].tpo_effectivity).local().format("HH:mm"));
+      setTime(moment.utc(rxbox[index].tpo_effectivity).local().format("HH:mm"));
     }
   };
 
