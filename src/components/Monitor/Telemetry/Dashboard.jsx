@@ -172,7 +172,7 @@ const TelemetryDashboard = (props) => {
   };
 
   const autoRefresh = () => {
-    setTimeout(function () {
+    setInterval(function () {
       // window.location.reload();
       getMonitorWithPatientId();
     }, refreshInterval * 1000);
