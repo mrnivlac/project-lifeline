@@ -47,7 +47,7 @@ const TelemetryDashboard = (props) => {
   const [rxboxData, setRxboxData] = useState([]);
   const [patients, setPatients] = useState([]);
   const [monitor, setMonitor] = useState({});
-  const [refreshInterval] = useState(60);
+  const [refreshInterval] = useState(30);
   const [code] = useState({
     ecg: "76282-3",
     spo2: "59407-7",
